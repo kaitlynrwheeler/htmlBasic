@@ -1,6 +1,7 @@
 h1 {
-  color: #885df1;
+  color: green;
   padding: 20px;
+  font-family: fantasy
 }
 
 hr {
@@ -21,13 +22,78 @@ hr {
   }
 }
 
-ul {
-  list-style-type: square;
-  /* Changes bullets to squares */
+body {
+  background-color: lightgray;
 }
 
-body {
-  background-color: antiquewhite;
+.star {
+  font-size: 1em;
+  /* Adjust size as needed */
+  color: green;
+  /* Set star color */
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+  /* Optional shadow for depth */
+  line-height: 20px;
+  padding-right: 15px;
 
+}
 
+.second-list {
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  line-height: 30px;
+}
+
+.second-list {
+  list-style-type: none;
+  /* Remove default bullet points */
+  padding-left: 0;
+  /* Adjust as needed */
+}
+
+.second-list ::before {
+  content: "\2605";
+  /* Unicode for a black star */
+  color: green;
+  /* Optional: style the star color */
+  margin-right: 0.5em;
+  /* Space between star and text */
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+/* Flex Container Styles */
+.flex-container {
+  display: flex;
+  /* Makes the element a flex container */
+  flex-direction: row;
+  /* Arranges items in a row (default) */
+  justify-content: center;
+  /* Aligns items along the main axis (horizontally for rows) */
+  align-items: center;
+  /* Aligns items along the cross axis (vertically for rows) */
+  gap: 10px;
+  /* Adds space between flex items */
+  height: 150px;
+  /* Example height for the container */
+  padding-bottom: 20px;
+
+}
+
+/* Flex Item Styles */
+.flex-item {
+  padding: 20px;
+  background-color: lightsteelblue;
+  border: 1px solid green;
+  color: #333;
+}
+
+h4 {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border: 100px;
 }

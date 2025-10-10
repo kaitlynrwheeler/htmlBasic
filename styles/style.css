@@ -1,41 +1,37 @@
 h1 {
-  color: green;
+  color: rgb(181, 39, 87);
   padding: 20px;
-  font-family: fantasy
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  align-items: center;
+
 }
 
-hr {
+.my-button {
+  background-color: rgb(228, 93, 138);
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  /* Smooth transition on hover */
+}
 
-  html,
-  body {
-    margin: 0;
-    /* Remove default margins */
-    padding: 0;
-    /* Remove default padding */
-    height: 100vh;
-    /* Set height to 100% of viewport height */
-    width: 100vw;
-    /* Set width to 100% of viewport width */
-    box-sizing: border-box;
-    /* Include padding and border in element's total width and height */
-
-  }
+.my-button:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
 }
 
 body {
   background-color: lightgray;
-}
-
-.star {
-  font-size: 1em;
-  /* Adjust size as needed */
-  color: green;
-  /* Set star color */
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
-  /* Optional shadow for depth */
-  line-height: 20px;
-  padding-right: 15px;
-
 }
 
 .second-list {
@@ -48,43 +44,30 @@ body {
 
 .second-list {
   list-style-type: none;
-  /* Remove default bullet points */
   padding-left: 0;
-  /* Adjust as needed */
 }
 
 .second-list ::before {
   content: "\2605";
-  /* Unicode for a black star */
-  color: green;
-  /* Optional: style the star color */
+  color: palevioletred;
   margin-right: 0.5em;
-  /* Space between star and text */
 }
 
 p {
   padding-bottom: 20px;
 }
 
-/* Flex Container Styles */
 .flex-container {
   display: flex;
-  /* Makes the element a flex container */
   flex-direction: row;
-  /* Arranges items in a row (default) */
   justify-content: center;
-  /* Aligns items along the main axis (horizontally for rows) */
   align-items: center;
-  /* Aligns items along the cross axis (vertically for rows) */
   gap: 10px;
-  /* Adds space between flex items */
   height: 150px;
-  /* Example height for the container */
   padding-bottom: 20px;
 
 }
 
-/* Flex Item Styles */
 .flex-item {
   padding: 20px;
   background-color: lightsteelblue;
@@ -96,4 +79,57 @@ h4 {
   padding-bottom: 15px;
   padding-top: 10px;
   border: 100px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: green;
+}
+
+
+.flipcard {
+  background-color: transparent;
+  width: 290px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: pink;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: pink;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }

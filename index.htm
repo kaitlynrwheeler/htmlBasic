@@ -58,11 +58,11 @@
     </nav>
 
 
-    <h1>
+    <h1 class="Welcome">
       Welcome to your Homepage!
     </h1>
     <div class="m-3 p-22">
-      <button type="button" class="btn btn-success">New Journal Entry</button>
+      <button class="my-button">New Journal</button>
     </div>
 
     <div class="container m-3">
@@ -91,19 +91,79 @@
         </h6>
       </blockquote>
 
-
-      <h4>My Current Favorites:</h4>
-
-      <div class="flex-container">
-        <div class="flex-item">Favorite Movie: Pride and Prejudice
-        </div>
-        <div class="flex-item">Favorite Book: Throne of Glass</div>
-        <div class="flex-item">Favorite Show: Bob's Burgers</div>
-      </div>
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
+</style>
+</head>
+
+<body>
+
+  <h2>Card Flip with Text</h2>
+  <h3>Hover over the image below:</h3>
+
+  <div style="display: flex;">
+    <div class="cards-grid">
+      <div class="flipcard">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            </div>
+            <p></p>
+            <div class="flip-card-front">
+              <h1>Movie</h1>
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flipcard">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            </div>
+            <p></p>
+            <div class="flip-card-front">
+              <h1>Book</h1>
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flipcard">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            </div>
+            <p></p>
+            <div class="flip-card-front">
+              <h1>Show</h1>
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+
 
 </html>

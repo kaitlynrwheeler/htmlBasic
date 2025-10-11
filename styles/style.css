@@ -29,7 +29,7 @@ h1 {
 }
 
 .my-button:hover {
-  background-color: #45a049;
+  background-color: darkslategrey;
 }
 
 body {
@@ -158,10 +158,6 @@ img {
   display: block;
   margin: 0 auto;
   padding-top: 20px;
-}
-
-p {
-  padding: 5px;
 }
 
 h3 {

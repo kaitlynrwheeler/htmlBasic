@@ -55,10 +55,6 @@ body {
   margin-right: 0.5em;
 }
 
-p {
-  padding-bottom: 20px;
-}
-
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -81,11 +77,6 @@ h4 {
   padding-bottom: 15px;
   padding-top: 10px;
   border: 100px;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: green;
 }
 
 
@@ -152,16 +143,20 @@ h5 {
   padding-bottom: 8px;
 }
 
+h3 {
+  color: rgb(181, 39, 87);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
 img {
   width: 35%;
   height: auto;
   display: block;
   margin: 0 auto;
   padding-top: 20px;
-}
-
-h3 {
-  color: rgb(181, 39, 87);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;
 }

@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+h1 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    background-color: pink;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+.navbar a {
+    color: darkslategray;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+}
+
+li a:hover {
+    background-color: lightgrey;
+}
